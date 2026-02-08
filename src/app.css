@@ -1,0 +1,64 @@
+:root {
+    --background: #0B0E0D;
+    --font-color: #F2F0EF;
+    --button-stroke: white;
+    --h1-font-size: 64px;
+    --body-font-size: 14px;
+    --button-font-size: 32px;
+    --accent-color: #FF2C2C;
+}
+
+* {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--font-color);
+    text-align: center;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-family: Helvetica, Arial, sans-serif
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--button-stroke);
+    color: var(--font-color);
+    border-radius: 12px;
+    padding: 12px 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.clickable {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.gotcha {
+    font-size: 10px;
+}
+
+.circle {
+    height: 400px;
+    width: 400px;
+    background-image: radial-gradient(circle, white 0%, #D1D1D1 50%, #9B9B9B 100%);
+}
